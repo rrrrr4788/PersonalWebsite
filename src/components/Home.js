@@ -8,13 +8,10 @@ const Home = () => {
         <nav id='navbar'>
           <div className='container'>
             <h1 className='logo'>
-              <Link to='/'>HBT</Link>
+              <Link to='/'>Haozhe Zhang</Link>
             </h1>
             <ul>
               <li>
-                {/* <a className='current' href='index.html'>
-                  Home
-                </a> */}
                 <Link className='current' to='/'>
                   Home
                 </Link>
@@ -30,19 +27,21 @@ const Home = () => {
           </div>
         </nav>
         <div id='showcase'>
-          <div className='container'>
-            <div className='showcase-content'>
-              <h1>
-                <span className='text-primary'>Enjoy</span> your Stay
-              </h1>
-              <p className='lead'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Aspernatur porro deserunt, laudantium consequatur omnis
-                reprehenderit.
-              </p>
-              <Link className='btn' to='/about'>
-                About Our Hotel
-              </Link>
+          <div className='dark-overlay'>
+            <div className='container'>
+              <div className='showcase-content'>
+                <h1>
+                  <span className='text-primary'>Enjoy</span> your Stay
+                </h1>
+                <p className='lead'>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aspernatur porro deserunt, laudantium consequatur omnis
+                  reprehenderit.
+                </p>
+                <Link className='btn' to='/about'>
+                  About Me
+                </Link>
+              </div>
             </div>
           </div>
         </div>

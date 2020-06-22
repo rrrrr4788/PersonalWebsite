@@ -11,7 +11,7 @@ const About = () => {
         <nav id='navbar'>
           <div className='container'>
             <h1 className='logo'>
-              <Link to='/'>HBT</Link>
+              <Link to='/'>Haozhe Zhang</Link>
             </h1>
             <ul>
               <li>

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
+import FB from '../img/FB.png';
+import GH from '../img/GH.png';
+import LI from '../img/LI.png';
 
 const Contact = () => {
   const [state, setstate] = useState({
@@ -45,7 +48,7 @@ const Contact = () => {
         <nav id='navbar'>
           <div className='container'>
             <h1 className='logo'>
-              <Link to='/'>HBT</Link>
+              <Link to='/'>Haozhe Zhang</Link>
             </h1>
             <ul>
               <li>
@@ -67,21 +70,10 @@ const Contact = () => {
       <section id='contact-form' className='py-3'>
         <div className='container'>
           <h1 className='l-heading'>
-            <span className='text-primary'>Contact </span>Us
+            <span className='text-primary'>Contact </span>Me
           </h1>
-          <p>Please fill out the form below to contact us</p>
+          <p>Please fill out the form below to contact me</p>
           <form onSubmit={onSubmit}>
-            {/* <div className='form-group'>
-              <label htmlFor='name'>Name</label>
-              <input
-                type='text'
-                name='name'
-                id='name'
-                onChange={(e) => {
-                  onChange(e);
-                }}
-              />
-            </div> */}
             <div className='form-group'>
               <label htmlFor='email'>Email</label>
               <input
@@ -116,11 +108,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button
-              type='submit'
-              className='btn'
-              //   onClick={() => console.log(state)}
-            >
+            <button type='submit' className='btn'>
               Submit
             </button>
           </form>
@@ -129,21 +117,21 @@ const Contact = () => {
 
       <section id='contact-info'>
         <div className='container'>
-          <div className='box'>
-            <i className='fas fa-hotel fa-3x'></i>
-            <h3>Location</h3>
-            <p>1001 Sw 17th Ln, Gainesville FL</p>
-          </div>
-
-          <div className='box'>
+          <div className='contactbox'>
             <i className='fas fa-phone fa-3x'></i>
-            <h3>Phone Number</h3>
-            <p>(617) 555-5555</p>
-          </div>
-          <div className='box'>
-            <i className='fas fa-envelope fa-3x'></i>
             <h3>Email Address</h3>
-            <p>frontdesk@hotelbt.co</p>
+            <p>zhz19980514@ufl.edu</p>
+            <div style={{ flexDirection: 'row' }}>
+              <a href='https://www.facebook.com/profile.php?id=100013402022270&ref=bookmarks'>
+                <img src={FB} alt='FB'></img>
+              </a>
+              <a href='https://github.com/rrrrr4788'>
+                <img src={GH} alt='GH'></img>
+              </a>
+              <a href='https://www.linkedin.com/in/haozhe-zhang/'>
+                <img src={LI} alt='LI'></img>
+              </a>
+            </div>
           </div>
         </div>
       </section>
