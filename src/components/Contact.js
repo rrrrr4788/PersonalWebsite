@@ -1,13 +1,41 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [state, setstate] = useState({
-    name: '',
     email: '',
     subject: '',
     message: '',
   });
+
+  const sendEmail = (e) => {
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'personal_website',
+        e.target,
+        'user_nynB33zq4ey93dG3z7jge'
+      )
+      .then(
+        (result) => {
+          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const onSubmit = (e) => {
+    if (state.message !== '' && state.email !== '' && state.subject !== '') {
+      sendEmail(e);
+    } else {
+      alert('All fields are required.');
+    }
+  };
 
   const onChange = (e) =>
     setstate({ ...state, [e.target.name]: e.target.value });
@@ -42,8 +70,8 @@ const Contact = () => {
             <span className='text-primary'>Contact </span>Us
           </h1>
           <p>Please fill out the form below to contact us</p>
-          <form>
-            <div className='form-group'>
+          <form onSubmit={onSubmit}>
+            {/* <div className='form-group'>
               <label htmlFor='name'>Name</label>
               <input
                 type='text'
@@ -53,7 +81,7 @@ const Contact = () => {
                   onChange(e);
                 }}
               />
-            </div>
+            </div> */}
             <div className='form-group'>
               <label htmlFor='email'>Email</label>
               <input
@@ -91,11 +119,10 @@ const Contact = () => {
             <button
               type='submit'
               className='btn'
-              onClick={() => console.log(state)}
+              //   onClick={() => console.log(state)}
             >
               Submit
             </button>
-            {/* <input type='submit' classNameName='btn' /> */}
           </form>
         </div>
       </section>
