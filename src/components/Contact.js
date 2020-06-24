@@ -137,7 +137,7 @@ const Contact = () => {
       </section>
 
       <footer id='main-footer'>
-        <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+        <p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
       </footer>
     </section>
   );

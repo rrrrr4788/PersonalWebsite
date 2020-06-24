@@ -34,7 +34,7 @@ const About = () => {
         <div className='container'>
           <div className='info-left'>
             <h1 className='l-heading'>
-              <span className='text-primary'>About </span>Hotel BT
+              <span className='text-primary'>About </span>Haozhe Zhang
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +83,7 @@ const About = () => {
       </section>
 
       <footer id='main-footer'>
-        <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+        <p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
       </footer>
     </section>
   );

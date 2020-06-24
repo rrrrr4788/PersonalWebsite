@@ -31,12 +31,12 @@ const Home = () => {
             <div className='container'>
               <div className='showcase-content'>
                 <h1>
-                  <span className='text-primary'>Enjoy</span> your Stay
+                  <span className='text-primary'>Haozhe Zhang's</span> Personal
+                  Space
                 </h1>
                 <p className='lead'>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Aspernatur porro deserunt, laudantium consequatur omnis
-                  reprehenderit.
+                  An enthusiastic CISE & MSM student who is currently enrolled
+                  in University of Florida.
                 </p>
                 <Link className='btn' to='/about'>
                   About Me
@@ -49,17 +49,18 @@ const Home = () => {
 
       <section id='home-info' className='bg-dark'>
         <div className='info-img'></div>
+        <div style={{ float: 'right', width: '10%', minHeight: '100%' }}></div>
         <div className='info-content'>
           <h2>
-            <span className='text-primary'>The History</span> of Our Hotel
+            A Brief
+            <span className='text-primary'> Intro</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam
-            doloremque quidem nesciunt, cupiditate deleniti eveniet temporibus
-            dolorum porro, necessitatibus sit consectetur, repellendus nisi
-            consequatur. In, repudiandae saepe, necessitatibus enim distinctio
-            quod tenetur aliquid illo rem molestias provident, voluptatem
-            veniam!
+            Hello, welcome to my personal website. This is Haozhe Zhang, a
+            University of Florida student, currently majoring in Computer
+            Science Engineering at Herbert Wertheim College of Engineering,
+            minoring in Chemistry, and pursuing Master of Science in Management
+            at Warrington College of Business.
           </p>
           <Link to='/about' className='btn btn-light'>
             Read More
@@ -70,35 +71,41 @@ const Home = () => {
       <section id='features'>
         <div className='box bg-light'>
           <i className='fas fa-hotel fa-3x'></i>
-          <h3>Great Location</h3>
+          <h3>Eagerness to Learn</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-            consectetur?
+            Over the past three years, with great enthusiasm, I grew up to be a
+            skillful and experienced programmer through committing countless
+            hours to learning extra-curricular technologies as well as applying
+            them in practice, even sometimes on the spot.
           </p>
         </div>
 
         <div className='box bg-primary'>
           <i className='fas fa-utensils fa-3x'></i>
-          <h3>Free Meals</h3>
+          <h3>Leadership</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-            consectetur?
+            In the senior year, UF Open Source appointed me as the External
+            Relations Chair. Apart from mediating the relations between the club
+            and other organizations, I also participated in the management of
+            the club via coordinating club activities.
           </p>
         </div>
         <div className='box bg-light'>
           <i className='fas fa-dumbbell fa-3x'></i>
-          <h3>Fitness Room</h3>
+          <h3>Creativity</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
-            consectetur?
+            Creativity is another key that fosters me to excel as a programmer.
+            With solid understanding of skills learned, whenever needed, I
+            always come up with ideas that excite teammates.
           </p>
+          <br></br>
         </div>
       </section>
 
       <div className='clr'></div>
 
       <footer id='main-footer'>
-        <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+        <p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
       </footer>
     </section>
   );

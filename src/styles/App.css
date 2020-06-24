@@ -45,13 +45,14 @@ p {
 
 .btn {
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   background: #333;
   padding: 13px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -129,6 +130,7 @@ p {
   display: block;
   padding: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
 #navbar ul li a:hover,
@@ -165,9 +167,9 @@ p {
 }
 
 #home-info .info-img {
-  float: left;
-  width: 50%;
-  background: url(../img/photo-1.jpg) no-repeat;
+  float: right;
+  width: 30%;
+  background: url(../img/headshot.png) no-repeat;
   min-height: 100%;
 }
 #home-info .info-content {
@@ -180,7 +182,8 @@ p {
 }
 
 #home-info .info-content p {
-  padding-bottom: 30px;
+  font-size: 18px;
+  padding-bottom: 20px;
 }
 
 /* Features */
