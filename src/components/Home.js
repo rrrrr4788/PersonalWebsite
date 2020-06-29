@@ -49,7 +49,7 @@ const Home = () => {
 
       <section id='home-info' className='bg-dark'>
         <div className='info-img'></div>
-        <div style={{ float: 'right', width: '10%', minHeight: '100%' }}></div>
+        <div className='info-placeholder'></div>
         <div className='info-content'>
           <h2>
             A Brief
