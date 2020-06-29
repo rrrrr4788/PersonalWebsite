@@ -190,7 +190,7 @@ const About = () => {
               Temporibus necessitatibus corporis, ipsam veritatis itaque quae ab
               adipisci veniam quo nihil consectetur. Consectetur, eius!
               Accusantium deleniti sapiente eveniet earum ex iste rem eum, hic,
-              optio laudantium cupiditate alias fuga impedit maxime!
+              optio laudantium cupiditate alias fuga impedimaxime!
             </p>
           </div>
         </div>
