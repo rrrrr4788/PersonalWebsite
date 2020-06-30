@@ -9,6 +9,7 @@ import js from '../img/JS.png';
 import web from '../img/web.png';
 import matlab from '../img/matlab.png';
 import node from '../img/node.png';
+import express from '../img/express.png';
 import css from '../img/css.png';
 import html from '../img/html.png';
 import database from '../img/database.png';
@@ -18,6 +19,7 @@ import react from '../img/react.png';
 import unity from '../img/unity.png';
 import sql from '../img/sql.png';
 import android from '../img/android.png';
+import kivy from '../img/kivy.png';
 import person1 from '../img/person-1.jpg';
 import person2 from '../img/person-2.jpg';
 
@@ -63,8 +65,8 @@ const About = () => {
               Science Engineering at Herbert Wertheim College of Engineering.
               Over three years, Haozhe has grown up to be a skillful programmer,
               with interests and experience in various fields of Computer
-              Science, including website development, backend developement,
-              mobile development, Virtual Realtity development, etc.
+              Science, including website development, backend development,
+              mobile development, Virtual Reality development, etc.
             </p>
           </div>
           <div className='info-right'>
@@ -73,7 +75,7 @@ const About = () => {
 
           <div className='info-below'>
             <p>
-              A strong academice background and ability to always learn new
+              A strong academic background and ability to always learn new
               technology have been a catalyst for reaching higher goals. Since
               the Junior year, he frequently participated in extra-curricular
               activities to strengthen and expand programming capabilities. In
@@ -84,14 +86,14 @@ const About = () => {
               teammates built and demoed multiple eye-catching projects.
             </p>
             <p>
-              Despite having an excellence in Computer Science, his ambition
-              drives him to chase accomplishments in different fields. In order
-              to seek chances to combine his skills in both programming and
-              management, he was enrolled in the Master of Science of Management
-              program at UF Warrington College of Business in 2019. This
-              opportunity served as a start to gain knowledge out of the scope
-              of engineers and will further facilitate him to be a manager with
-              a good sense in business.
+              Despite having excellence in Computer Science, his ambition drives
+              him to chase accomplishments in different fields. In order to seek
+              chances to combine his skills in both programming and management,
+              he was enrolled in the Master of Science of Management program at
+              UF Warrington College of Business in 2019. This opportunity served
+              as a start to gain knowledge out of the scope of engineers and
+              will further facilitate him to be a manager with a good sense in
+              business.
             </p>
             <p>
               Currently, Haozhe is looking to apply for a graduate school to
@@ -142,6 +144,9 @@ const About = () => {
             <div className='unit'>
               <img src={node} alt='Node'></img>
             </div>
+            <div className='unit'>
+              <img src={express} alt='Express'></img>
+            </div>
           </div>
         </div>
       </section>
@@ -164,6 +169,9 @@ const About = () => {
             <img src={android} alt='Android' />
             <div className='unit'>
               <img src={react} alt='React Native'></img>
+            </div>
+            <div className='unit'>
+              <img src={kivy} alt='Kivy'></img>
             </div>
           </div>
         </div>
