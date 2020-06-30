@@ -1,0 +1,25 @@
+{
+  "short_name": "Haozhe Zhang",
+  "name": "Haozhe Zhang's Personal Website",
+  "icons": [
+    {
+      "src": "https://github.com/rrrrr4788/imgHolder/blob/master/Icon.png?raw=true",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
