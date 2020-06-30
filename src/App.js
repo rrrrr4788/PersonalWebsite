@@ -8,7 +8,7 @@ import './styles/App.css';
 function App() {
   return (
     <div className='App'>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Fragment>
           <Route exact path='/' component={Home} />
           <section className='container'>
