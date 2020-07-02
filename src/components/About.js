@@ -177,8 +177,8 @@ const About = () => {
         </div>
       </section>
       <div className='clr'></div>
-      <br></br>
-      <section id='experiences' className='py-3'>
+      {/* <br></br> */}
+      {/* <section id='experiences' className='py-3'>
         <div className='container'>
           <h2 className='l-heading'>Experiences</h2>
           <div className='experiences bg-primary'>
@@ -203,7 +203,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <br></br>
+      <br></br> */}
       <footer id='main-footer'>
         <p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
       </footer>
