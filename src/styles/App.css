@@ -231,12 +231,12 @@ p {
 /* About Info */
 #about-info .info-right {
   float: right;
-  width: 35%;
+  width: 45%;
   min-height: 100%;
 }
 
 #about-info .info-right img {
-  width: 35%;
+  width: 45%;
   display: block;
   margin: auto;
   border-radius: 5%;
@@ -244,7 +244,7 @@ p {
 
 #about-info .info-left {
   float: left;
-  width: 60%;
+  width: 55%;
   min-height: 100%;
 }
 
@@ -252,6 +252,7 @@ p {
   min-height: 100%;
   float: left;
   width: 100%;
+  margin-top: 0em;
 }
 
 /* Skillset */

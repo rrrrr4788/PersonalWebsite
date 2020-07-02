@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import profile from '../img/headshot.png';
+import profile from '../img/headshot2.png';
 import codeicon from '../img/codeicon.png';
 import java from '../img/Java.png';
 import cpp from '../img/C++.png';
@@ -85,6 +85,8 @@ const About = () => {
               has participated in three Hackathons, during which he and his
               teammates built and demoed multiple eye-catching projects.
             </p>
+          </div>
+          <div className='info-below'>
             <p>
               Despite having excellence in Computer Science, his ambition drives
               him to chase accomplishments in different fields. In order to seek
@@ -95,6 +97,8 @@ const About = () => {
               will further facilitate him to be a manager with a good sense in
               business.
             </p>
+          </div>
+          <div className='info-below'>
             <p>
               Currently, Haozhe is looking to apply for a graduate school to
               continue the study in Computer Science.
