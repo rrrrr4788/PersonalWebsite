@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.1a299286.chunk.css",
-    "main.js": "/PersonalWebsite/static/js/main.1720fe0f.chunk.js",
-    "main.js.map": "/PersonalWebsite/static/js/main.1720fe0f.chunk.js.map",
+    "main.css": "/PersonalWebsite/static/css/main.4c538777.chunk.css",
+    "main.js": "/PersonalWebsite/static/js/main.35bbea9b.chunk.js",
+    "main.js.map": "/PersonalWebsite/static/js/main.35bbea9b.chunk.js.map",
     "runtime-main.js": "/PersonalWebsite/static/js/runtime-main.2a09b87b.js",
     "runtime-main.js.map": "/PersonalWebsite/static/js/runtime-main.2a09b87b.js.map",
     "static/js/2.28d9a4fc.chunk.js": "/PersonalWebsite/static/js/2.28d9a4fc.chunk.js",
     "static/js/2.28d9a4fc.chunk.js.map": "/PersonalWebsite/static/js/2.28d9a4fc.chunk.js.map",
     "index.html": "/PersonalWebsite/index.html",
-    "precache-manifest.bafd364fed22b56146d664358c4c675d.js": "/PersonalWebsite/precache-manifest.bafd364fed22b56146d664358c4c675d.js",
+    "precache-manifest.30fbebc16904da516eaa22f95d9ec59f.js": "/PersonalWebsite/precache-manifest.30fbebc16904da516eaa22f95d9ec59f.js",
     "service-worker.js": "/PersonalWebsite/service-worker.js",
-    "static/css/main.1a299286.chunk.css.map": "/PersonalWebsite/static/css/main.1a299286.chunk.css.map",
+    "static/css/main.4c538777.chunk.css.map": "/PersonalWebsite/static/css/main.4c538777.chunk.css.map",
     "static/js/2.28d9a4fc.chunk.js.LICENSE.txt": "/PersonalWebsite/static/js/2.28d9a4fc.chunk.js.LICENSE.txt",
     "static/media/C++.png": "/PersonalWebsite/static/media/C++.de2cf3ea.png",
     "static/media/JS.png": "/PersonalWebsite/static/media/JS.b54fc1c9.png",
@@ -21,7 +21,7 @@
     "static/media/App.css": "/PersonalWebsite/static/media/skillset-3.9a0989e7.jpeg",
     "static/media/express.png": "/PersonalWebsite/static/media/express.88487091.png",
     "static/media/firebase.png": "/PersonalWebsite/static/media/firebase.dae7f44a.png",
-    "static/media/headshot.png": "/PersonalWebsite/static/media/headshot.bf9aef75.png",
+    "static/media/headshot2.png": "/PersonalWebsite/static/media/headshot2.865c7b61.png",
     "static/media/html.png": "/PersonalWebsite/static/media/html.fb1e7f9d.png",
     "static/media/kivy.png": "/PersonalWebsite/static/media/kivy.ae6ce5d4.png",
     "static/media/matlab.png": "/PersonalWebsite/static/media/matlab.0fab1284.png",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.2a09b87b.js",
     "static/js/2.28d9a4fc.chunk.js",
-    "static/css/main.1a299286.chunk.css",
-    "static/js/main.1720fe0f.chunk.js"
+    "static/css/main.4c538777.chunk.css",
+    "static/js/main.35bbea9b.chunk.js"
   ]
 }
