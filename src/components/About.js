@@ -59,14 +59,14 @@ const About = () => {
               <span style={{ fontWeight: 'bold' }}>Haozhe Zhang</span>{' '}
               (Pronounced{' '}
               <span style={{ fontWeight: 'bold' }}>How-ja Jahng</span>) was born
-              in Huizhou, Guangdong, China, in the year of 1998. In 2016, he
-              matriculated at University of Florida as a Chemical Engineering
-              student. One year later, he switched to Computer Information and
-              Science Engineering at Herbert Wertheim College of Engineering.
-              Over three years, Haozhe has grown up to be a skillful programmer,
-              with interests and experience in various fields of Computer
-              Science, including website development, backend development,
-              mobile development, Virtual Reality development, etc.
+              in Huizhou, Guangdong, China, in 1998. In 2016, he matriculated at
+              the University of Florida in Chemical Engineering. One year later,
+              he switched to Computer Information and Science Engineering at the
+              Herbert Wertheim College of Engineering. Over three years, Haozhe
+              has grown up to be a skillful programmer, with interests and
+              experience in various fields of Computer Science, including
+              website development, backend development, mobile development, and
+              Virtual Reality development.
             </p>
           </div>
           <div className='info-right'>
@@ -76,32 +76,32 @@ const About = () => {
           <div className='info-below'>
             <p>
               A strong academic background and ability to always learn new
-              technology have been a catalyst for reaching higher goals. Since
-              the Junior year, he frequently participated in extra-curricular
+              technology have been catalysts for reaching higher goals. Since
+              his Junior year, he frequently participated in extra-curricular
               activities to strengthen and expand programming capabilities. In
               2019, UF Open Source Club appointed him as the External Relations
               Chair in light of the active and continuous contribution to
               Marston vs. West, one of its club projects. Additionally, Haozhe
               has participated in three Hackathons, during which he and his
-              teammates built and demoed multiple eye-catching projects.
+              teammates built and demonstrated multiple eye-catching projects.
             </p>
           </div>
           <div className='info-below'>
             <p>
-              Despite having excellence in Computer Science, his ambition drives
-              him to chase accomplishments in different fields. In order to seek
-              chances to combine his skills in both programming and management,
-              he was enrolled in the Master of Science of Management program at
-              UF Warrington College of Business in 2019. This opportunity served
-              as a start to gain knowledge out of the scope of engineers and
-              will further facilitate him to be a manager with a good sense in
-              business.
+              In additionto excellence in Computer Science, his ambition drives
+              him to pursue accomplishments in other fields. In order to seek
+              opportunities to combine his skills in both programming and
+              management, he enrolled in the Master of Science of Management
+              program at UF's Warrington College of Business in 2019. This
+              opportunity served as a start to gain knowledge beyond the scope
+              of engineers and will further facilitate him to be a manager with
+              a good sense in business.
             </p>
           </div>
           <div className='info-below'>
             <p>
-              Currently, Haozhe is looking to apply for a graduate school to
-              continue the study in Computer Science.
+              Currently, Haozhe is applying to a graduate school in order to
+              continue his study in Computer Science.
             </p>
           </div>
         </div>
