@@ -20,8 +20,6 @@ import unity from '../img/unity.png';
 import sql from '../img/sql.png';
 import android from '../img/android.png';
 import kivy from '../img/kivy.png';
-import person1 from '../img/person-1.jpg';
-import person2 from '../img/person-2.jpg';
 
 const About = () => {
   return (

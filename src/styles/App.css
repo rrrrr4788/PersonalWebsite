@@ -170,13 +170,13 @@ p {
   float: right;
   position: relative;
   top: 50%;
-  height: 400px;
-  margin-top: -200px;
+  height: 1600px;
+  margin-top: -800px;
   width: 30%;
-  background: url(../img/profile.png) no-repeat;
+  background: url(../img/profile_trimmed.png) no-repeat;
   /* min-height: 100%; */
-  zoom: 80%;
-  padding: 50px, 30px;
+  zoom: 20%;
+  padding: 0px, 0px;
   /* margin-bottom: 5%; */
 }
 
@@ -190,7 +190,7 @@ p {
   width: 50%;
   height: 100%;
   text-align: center;
-  padding: 50px 30px;
+  padding: 90px 30px;
   overflow: hidden;
 }
 
