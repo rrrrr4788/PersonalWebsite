@@ -58,6 +58,12 @@ const Contact = () => {
                 <Link to='/about'>About</Link>
               </li>
               <li>
+                <Link to='/projects'>Projects</Link>
+              </li>
+              <li>
+                <Link to='/resume'>Resume</Link>
+              </li>
+              <li>
                 <Link className='current' to='/contact'>
                   Contact
                 </Link>
