@@ -84,36 +84,37 @@ const Home = () => {
         </section>
 
         <section id='features'>
-          <div className='box bg-light'>
-            <i className='fas fa-hotel fa-3x'></i>
-            <h3>Eagerness to Learn</h3>
-            <p>
-              Over the past three years, with great enthusiasm, I grew up to be
-              a skillful and experienced programmer through committing countless
-              hours to learning extra-curricular technologies as well as
-              applying them in practice, even sometimes on the spot.
-            </p>
-          </div>
+          <div className='flex-container'>
+            <div className='box bg-light'>
+              <i className='fas fa-hotel fa-3x'></i>
+              <h3>Eagerness to Learn</h3>
+              <p>
+                Over the past three years, with great enthusiasm, I grew up to
+                be a skillful and experienced programmer through committing
+                countless hours to learning extra-curricular technologies as
+                well as applying them in practice, even sometimes on the spot.
+              </p>
+            </div>
 
-          <div className='box bg-primary'>
-            <i className='fas fa-utensils fa-3x'></i>
-            <h3>Leadership</h3>
-            <p>
-              In the senior year, UF Open Source appointed me as the External
-              Relations Chair. Apart from mediating the relations between the
-              club and other organizations, I also participated in the
-              management of the club via coordinating club activities.
-            </p>
-          </div>
-          <div className='box bg-light'>
-            <i className='fas fa-dumbbell fa-3x'></i>
-            <h3>Creativity</h3>
-            <p>
-              Creativity is another key that fosters me to excel as a
-              programmer. With solid understanding of skills learned, whenever
-              needed, I always come up with ideas that excite teammates.
-            </p>
-            <br></br>
+            <div className='box bg-primary'>
+              <i className='fas fa-utensils fa-3x'></i>
+              <h3>Leadership</h3>
+              <p>
+                In the senior year, UF Open Source appointed me as the External
+                Relations Chair. Apart from mediating the relations between the
+                club and other organizations, I also participated in the
+                management of the club via coordinating club activities.
+              </p>
+            </div>
+            <div className='box bg-light'>
+              <i className='fas fa-dumbbell fa-3x'></i>
+              <h3>Creativity</h3>
+              <p>
+                Creativity is another key that fosters me to excel as a
+                programmer. With solid understanding of skills learned, whenever
+                needed, I always come up with ideas that excite teammates.
+              </p>
+            </div>
           </div>
         </section>
 

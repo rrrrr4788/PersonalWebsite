@@ -216,6 +216,11 @@ p {
 }
 
 /* Features */
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+
 .box {
   float: left;
   width: 33.3%;
