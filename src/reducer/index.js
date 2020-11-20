@@ -12,7 +12,10 @@ const sendEmail = (e) => {
 
 	emailjs.sendForm('gmail', 'personal_website', e.target, userId).then(
 		(result) => {
-			window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+			// window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+			window.location.replace(
+				'https://rrrrr4788.github.io/PersonalWebsite/'
+			);
 		},
 		(error) => {
 			console.log(error.text);
