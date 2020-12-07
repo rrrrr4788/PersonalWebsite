@@ -47,7 +47,7 @@ p {
 .container {
 	margin: auto;
 	max-width: 1100px;
-	overflow: auto;
+	overflow: hidden;
 	padding: 0 20px;
 }
 
@@ -119,18 +119,26 @@ p {
 
 /* Navbar */
 #navbar {
+	display: flex;
+	justify-content: center;
+	padding: 0.7rem 2rem;
+	align-items: center;
 	background: #333;
 	color: #fff;
-	overflow: auto;
+	width: 100%;
 }
 
 #navbar a {
 	color: white;
+	padding: 0.45rem;
+	margin: 0 0.25rem;
 }
 
 #navbar h1 {
 	float: left;
 	padding-top: 20px;
+	padding-right: 300px;
+	white-space: nowrap;
 }
 
 #navbar ul {
