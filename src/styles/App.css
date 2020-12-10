@@ -49,6 +49,7 @@ p {
 	max-width: 1100px;
 	overflow: hidden;
 	padding: 0 20px;
+	flex: 1;
 }
 
 .text-primary {
@@ -120,7 +121,7 @@ p {
 /* Navbar */
 #navbar {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	padding: 0.7rem 2rem;
 	align-items: center;
 	background: #333;
@@ -137,13 +138,15 @@ p {
 #navbar h1 {
 	float: left;
 	padding-top: 20px;
-	padding-right: 300px;
+	/* padding-right: 300px; */
 	white-space: nowrap;
+	/* flex: 4; */
 }
 
 #navbar ul {
 	list-style: none;
 	float: right;
+	flex: 1;
 }
 
 #navbar ul li {
@@ -216,6 +219,7 @@ p {
 	text-align: center;
 	padding: 90px 30px;
 	overflow: hidden;
+	align-items: stretch;
 }
 
 #home-info .info-content p {
