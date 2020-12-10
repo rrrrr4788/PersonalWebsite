@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserView, MobileView } from 'react-device-detect';
+import Profile from '../img/profile_trimmed.png';
 
 const Home = () => {
 	return (
@@ -67,7 +68,6 @@ const Home = () => {
 				</header>
 
 				<section id='home-info' className='bg-dark'>
-					<div className='info-img'></div>
 					<div className='info-placeholder'></div>
 					<div className='info-content'>
 						<h2>
@@ -85,6 +85,10 @@ const Home = () => {
 						<Link to='/about' className='btn btn-light'>
 							Read More
 						</Link>
+					</div>
+					<div className='info-placeholder'></div>
+					<div className='info-img'>
+						<img src={Profile} alt='Profile Pic' />
 					</div>
 				</section>
 

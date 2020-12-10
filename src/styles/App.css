@@ -138,9 +138,7 @@ p {
 #navbar h1 {
 	float: left;
 	padding-top: 20px;
-	/* padding-right: 300px; */
 	white-space: nowrap;
-	/* flex: 4; */
 }
 
 #navbar ul {
@@ -190,21 +188,23 @@ p {
 
 /* Home Info */
 #home-info {
-	height: 400px;
+	display: flex;
+	align-items: stretch;
+	position: relative;
 }
 
 #home-info .info-img {
-	float: right;
 	position: relative;
-	top: 50%;
+	flex: 2;
+}
+
+#home-info .info-img img {
 	height: 1600px;
-	margin-top: -800px;
-	width: 30%;
-	background: url(../img/profile_trimmed.png) no-repeat;
-	/* min-height: 100%; */
-	zoom: 20%;
+	zoom: 18%;
 	padding: 0px, 0px;
-	/* margin-bottom: 5%; */
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
 }
 
 #home-info .info-placeholder {
@@ -220,6 +220,7 @@ p {
 	padding: 90px 30px;
 	overflow: hidden;
 	align-items: stretch;
+	flex: 3;
 }
 
 #home-info .info-content p {
@@ -392,12 +393,6 @@ p {
 #resume .resume {
 	margin-top: 5%;
 	margin-bottom: 5%;
-	/* margin-left: 3%;
-	margin-right: 3%; */
-	/* display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%; */
 }
 
 /* Contact Form */
