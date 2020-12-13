@@ -36,17 +36,6 @@ const Resume = () => {
 				</nav>
 			</header>
 
-			{/* <div
-				style={{
-					alignItems: 'center',
-					justifyContent: 'center',
-					flex: 1,
-					textAlign: 'center',
-					wordWrap: 'normal',
-				}}
-			>
-				<h2>Section Under Construction</h2>
-			</div> */}
 			<div style={{ backgroundColor: '#ccc' }}>
 				<div className='container'>
 					<div id='resume'>

@@ -130,7 +130,6 @@ const About = () => {
 					<h2 className='l-heading'>Skillset</h2>
 					<div className='Skillset bg-primary'>
 						<img src={codeicon} alt='Programming Language Icon' />
-						{/* <p>Python, C++, Java, JavaScript</p> */}
 						<div className='unit'>
 							<img src={python} alt='Python'></img>
 						</div>
@@ -197,33 +196,6 @@ const About = () => {
 				</div>
 			</section>
 			<div className='clr'></div>
-			{/* <br></br> */}
-			{/* <section id='experiences' className='py-3'>
-        <div className='container'>
-          <h2 className='l-heading'>Experiences</h2>
-          <div className='experiences bg-primary'>
-            <img src={person1} alt='Samantha' />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus necessitatibus corporis, ipsam veritatis itaque quae ab
-              adipisci veniam quo nihil consectetur. Consectetur, eius!
-              Accusantium deleniti sapiente eveniet earum ex iste rem eum, hic,
-              optio laudantium cupiditate alias fuga impedit maxime!
-            </p>
-          </div>
-          <div className='experiences bg-primary'>
-            <img src={person2} alt='Jane' />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus necessitatibus corporis, ipsam veritatis itaque quae ab
-              adipisci veniam quo nihil consectetur. Consectetur, eius!
-              Accusantium deleniti sapiente eveniet earum ex iste rem eum, hic,
-              optio laudantium cupiditate alias fuga impedimaxime!
-            </p>
-          </div>
-        </div>
-      </section>
-      <br></br> */}
 			<footer id='main-footer'>
 				<p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
 			</footer>
