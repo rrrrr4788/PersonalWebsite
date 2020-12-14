@@ -103,6 +103,7 @@ p {
 
 .l-heading {
 	font-size: 40px;
+	line-height: 1em;
 }
 
 /* Padding */
@@ -329,6 +330,12 @@ p {
 	padding-top: 100px;
 }
 
+@media only screen and (max-width: 950px) {
+	#Skillset {
+		display: none;
+	}
+}
+
 #Skillset h2 {
 	color: #fff;
 	text-align: center;
@@ -360,6 +367,12 @@ p {
 	height: 600px;
 	background: url('../img/skillset-3.jpeg') no-repeat center center/cover;
 	padding-top: 100px;
+}
+
+@media only screen and (max-width: 950px) {
+	#Skillset-2 {
+		display: none;
+	}
 }
 
 #Skillset-2 h2 {
