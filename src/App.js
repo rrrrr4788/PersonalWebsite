@@ -6,7 +6,6 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import './styles/App.css';
-
 import { Provider } from 'react-redux';
 import store from './store';
 

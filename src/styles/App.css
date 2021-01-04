@@ -136,7 +136,7 @@ p {
 	margin: 0 0.25rem;
 }
 
-#navbar h1 {
+#navbar .logo {
 	float: left;
 	padding-top: 20px;
 	white-space: nowrap;
@@ -165,6 +165,23 @@ p {
 	background: #444;
 }
 
+@media only screen and (max-width: 768px) {
+	#navbar .logo {
+		float: none;
+		text-align: center;
+	}
+
+	#navbar ul,
+	#navbar ul li {
+		float: none;
+	}
+
+	#navbar ul li a {
+		padding: 5px;
+		border-bottom: #444 dotted 1px;
+	}
+}
+
 /* Showcase */
 #showcase {
 	background: url('../img/showcase.jpg') no-repeat center center/cover;
@@ -187,6 +204,17 @@ p {
 	line-height: 1.7em;
 }
 
+@media only screen and (max-width: 768px) {
+	#showcase {
+		height: 100%;
+	}
+
+	#showcase .showcase-content {
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+}
+
 /* Home Info */
 #home-info {
 	display: flex;
@@ -202,7 +230,18 @@ p {
 @media only screen and (max-width: 1000px) {
 	#home-info .info-img {
 		display: none;
-		flex: 0;
+	}
+
+	#home-info .info-img img {
+		display: none;
+	}
+
+	#home-info .info-placeholder {
+		display: none;
+	}
+
+	#home-info .info-content {
+		float: none;
 	}
 }
 
@@ -215,22 +254,10 @@ p {
 	transform: translate(0%, -50%);
 }
 
-@media only screen and (max-width: 1000px) {
-	#home-info .info-img img {
-		display: none;
-	}
-}
-
 #home-info .info-placeholder {
 	float: right;
 	width: 10%;
 	min-height: 100%;
-}
-
-@media only screen and (max-width: 1000px) {
-	#home-info .info-placeholder {
-		display: none;
-	}
 }
 
 #home-info .info-content {
@@ -255,7 +282,7 @@ p {
 	align-items: stretch;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.flex-container {
 		flex-direction: column;
 		align-items: stretch;
@@ -269,9 +296,10 @@ p {
 	text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.box {
 		width: 100%;
+		float: none;
 	}
 }
 
@@ -323,9 +351,22 @@ p {
 	margin-top: 0em;
 }
 
+@media only screen and (max-width: 768px) {
+	#about-info .info-right,
+	#about-info .info-left {
+		float: none;
+		width: 100%;
+	}
+
+	#about-info .info-right {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
 /* Skillset */
 #Skillset {
-	height: 600px;
+	height: 100%;
 	background: url('../img/skillset-2.jpg') no-repeat center center/cover;
 	padding-top: 100px;
 }
@@ -364,7 +405,7 @@ p {
 }
 
 #Skillset-2 {
-	height: 600px;
+	height: 100%;
 	background: url('../img/skillset-3.jpeg') no-repeat center center/cover;
 	padding-top: 100px;
 }
