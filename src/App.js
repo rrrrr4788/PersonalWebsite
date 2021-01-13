@@ -16,23 +16,16 @@ function App() {
 				<Router basename={process.env.PUBLIC_URL}>
 					<Fragment>
 						<Route exact path='/' component={Home} />
+						<Route exact path='/projects' component={Projects} />
+						<Route exact path='/contact' component={Contact} />
 						<section className='container'>
 							<Switch>
 								<Route exact path='/about' component={About} />
-								<Route
-									exact
-									path='/projects'
-									component={Projects}
-								/>
+
 								<Route
 									exact
 									path='/resume'
 									component={Resume}
-								/>
-								<Route
-									exact
-									path='/contact'
-									component={Contact}
 								/>
 							</Switch>
 						</section>
