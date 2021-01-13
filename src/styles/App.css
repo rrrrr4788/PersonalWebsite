@@ -82,6 +82,20 @@ p {
 	color: #333;
 }
 
+.btn-primary {
+	background: #444;
+	border: 1px #ddd solid;
+	position: absolute;
+	bottom: 20%;
+	padding: 8px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.btn-primary a {
+	color: white;
+}
+
 .bg-dark {
 	background: #333;
 	color: white;
@@ -524,4 +538,59 @@ p {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+/* Project Box*/
+.project-box {
+	background-color: #ddd;
+	width: 30%;
+	height: 450px;
+	margin: 15px;
+	border-radius: 10px;
+	border: 3px grey solid;
+	float: left;
+	flex-flow: column;
+	display: flex;
+	opacity: 85%;
+}
+
+.project-box h3 {
+	padding: 0;
+}
+
+.project-box p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.project-box p,
+	.project-box #tech {
+		display: none;
+	}
+}
+
+.project-box #tech {
+	width: 40px;
+}
+
+.project-box #cover {
+	border-radius: 5px;
+	height: 130px;
+	margin-top: 10px;
+	object-fit: contain;
+}
+
+.project-box #bottom {
+	flex: 1 1 auto;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+/* Projects */
+.projects #projects-info {
+	background: url('../img/_MG_9881.CR2.jpg') no-repeat 50% 50%;
+	background-size: cover;
 }

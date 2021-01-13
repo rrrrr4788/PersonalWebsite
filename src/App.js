@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Projects from './components/Projects';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
 import './styles/App.css';
 import { Provider } from 'react-redux';
 import store from './store';
