@@ -123,8 +123,8 @@ const About = () => {
 
 			<div className='clr'></div>
 
-			<section id='Skillset' className='py-3'>
-				<div className='container'>
+			<div className='container'>
+				<section id='Skillset' className='py-3'>
 					<h2 className='l-heading'>Skillset</h2>
 					<div className='Skillset bg-primary'>
 						<img src={codeicon} alt='Programming Language Icon' />
@@ -165,34 +165,34 @@ const About = () => {
 							<img src={express} alt='Express'></img>
 						</div>
 					</div>
-				</div>
-			</section>
-			<br></br>
-			<section id='Skillset-2' className='py-3'>
-				<div className='container'>
-					<div className='Skillset bg-primary'>
-						<img src={database} alt='Database' />
-						<div className='unit'>
-							<img src={firebase} alt='Firebase'></img>
+				</section>
+				<br></br>
+				<section id='Skillset-2' className='py-3'>
+					<div className='container'>
+						<div className='Skillset bg-primary'>
+							<img src={database} alt='Database' />
+							<div className='unit'>
+								<img src={firebase} alt='Firebase'></img>
+							</div>
+							<div className='unit'>
+								<img src={mongo} alt='MongoDB'></img>
+							</div>
+							<div className='unit'>
+								<img src={sql} alt='SQL'></img>
+							</div>
 						</div>
-						<div className='unit'>
-							<img src={mongo} alt='MongoDB'></img>
-						</div>
-						<div className='unit'>
-							<img src={sql} alt='SQL'></img>
+						<div className='Skillset bg-primary'>
+							<img src={android} alt='Android' />
+							<div className='unit'>
+								<img src={react} alt='React Native'></img>
+							</div>
+							<div className='unit'>
+								<img src={kivy} alt='Kivy'></img>
+							</div>
 						</div>
 					</div>
-					<div className='Skillset bg-primary'>
-						<img src={android} alt='Android' />
-						<div className='unit'>
-							<img src={react} alt='React Native'></img>
-						</div>
-						<div className='unit'>
-							<img src={kivy} alt='Kivy'></img>
-						</div>
-					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 			<div className='clr'></div>
 			<Footer />
 		</section>
