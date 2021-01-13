@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "533fb947185b79e008d7b385460b03bd",
+    "revision": "e61a0621d79df2600c3e27e43baac6d2",
     "url": "/PersonalWebsite/index.html"
   },
   {
-    "revision": "2c15e906fb64d9e809b8",
-    "url": "/PersonalWebsite/static/css/main.10333ea8.chunk.css"
+    "revision": "742b1429a0e416ae6e0a",
+    "url": "/PersonalWebsite/static/css/main.6097e98a.chunk.css"
   },
   {
     "revision": "e25d7860b12f705442c4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PersonalWebsite/static/js/2.05fac42f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c15e906fb64d9e809b8",
+    "revision": "742b1429a0e416ae6e0a",
     "url": "/PersonalWebsite/static/js/main.2c9ca91a.chunk.js"
   },
   {
@@ -48,16 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PersonalWebsite/static/media/Resume-ISOM v2.abb226fd.pdf"
   },
   {
-    "revision": "05bcf81d53f5144d32b9822f503c2e8e",
-    "url": "/PersonalWebsite/static/media/_MG_9881.CR2.05bcf81d.jpg"
-  },
-  {
     "revision": "c7f92fc8ed96d918aadee1b51c717ac4",
     "url": "/PersonalWebsite/static/media/android.c7f92fc8.png"
   },
   {
     "revision": "10550ee86b47ea33b21c4df8c6a053e8",
     "url": "/PersonalWebsite/static/media/css.10550ee8.png"
+  },
+  {
+    "revision": "05bcf81d53f5144d32b9822f503c2e8e",
+    "url": "/PersonalWebsite/static/media/duke.05bcf81d.jpg"
   },
   {
     "revision": "842b36f1e7664a8cd3c10d286402dfa2",
