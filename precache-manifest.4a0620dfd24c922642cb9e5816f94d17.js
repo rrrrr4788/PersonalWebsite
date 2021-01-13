@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef9f741ac1813764286dddb370fe2dc5",
+    "revision": "68296c6962e594d59b298bff11bd3d98",
     "url": "/PersonalWebsite/index.html"
   },
   {
-    "revision": "b9a7f61bd019ef2fa816",
-    "url": "/PersonalWebsite/static/css/main.3bc395bf.chunk.css"
+    "revision": "45d287aba71a150da2c5",
+    "url": "/PersonalWebsite/static/css/main.3b2fd882.chunk.css"
   },
   {
-    "revision": "8fc1c38683962f0f227f",
-    "url": "/PersonalWebsite/static/js/2.cbe1ed45.chunk.js"
+    "revision": "e25d7860b12f705442c4",
+    "url": "/PersonalWebsite/static/js/2.05fac42f.chunk.js"
   },
   {
     "revision": "2927c17f155caba9c734acdc50e6f829",
-    "url": "/PersonalWebsite/static/js/2.cbe1ed45.chunk.js.LICENSE.txt"
+    "url": "/PersonalWebsite/static/js/2.05fac42f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9a7f61bd019ef2fa816",
-    "url": "/PersonalWebsite/static/js/main.dd8c6329.chunk.js"
+    "revision": "45d287aba71a150da2c5",
+    "url": "/PersonalWebsite/static/js/main.2c9ca91a.chunk.js"
   },
   {
     "revision": "5e2ede022b3d6dfb6364",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "de2cf3ea9b841229f08851463b340d2e",
     "url": "/PersonalWebsite/static/media/C++.de2cf3ea.png"
+  },
+  {
+    "revision": "c3c9df3aaa20c05a69f36e57807536c9",
+    "url": "/PersonalWebsite/static/media/InMotion.c3c9df3a.jpg"
   },
   {
     "revision": "b54fc1c9e4f229859a1b00205f5d14c0",
@@ -42,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "abb226fdf027772875cda01fb7daddf6",
     "url": "/PersonalWebsite/static/media/Resume-ISOM v2.abb226fd.pdf"
+  },
+  {
+    "revision": "05bcf81d53f5144d32b9822f503c2e8e",
+    "url": "/PersonalWebsite/static/media/_MG_9881.CR2.05bcf81d.jpg"
   },
   {
     "revision": "c7f92fc8ed96d918aadee1b51c717ac4",
@@ -72,12 +80,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PersonalWebsite/static/media/html.fb1e7f9d.png"
   },
   {
+    "revision": "38093d07beb09fce5a0c576a33e998c5",
+    "url": "/PersonalWebsite/static/media/humming.38093d07.png"
+  },
+  {
     "revision": "ae6ce5d4dd12a7b195d22c1d54ce4ef4",
     "url": "/PersonalWebsite/static/media/kivy.ae6ce5d4.png"
   },
   {
     "revision": "0fab12847e7771ade81144c5feda884a",
     "url": "/PersonalWebsite/static/media/matlab.0fab1284.png"
+  },
+  {
+    "revision": "44b415c756c21a325c52ae5ffdd8e33e",
+    "url": "/PersonalWebsite/static/media/mc.44b415c7.jpg"
   },
   {
     "revision": "67db45dce58818968867e8230254528c",
