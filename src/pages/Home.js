@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Profile from '../img/profile_trimmed.png';
+import Footer from '../components/Footer';
 
 const Home = () => {
 	return (
@@ -55,7 +56,6 @@ const Home = () => {
 					</div>
 				</div>
 			</header>
-
 			<section id='home-info' className='bg-dark'>
 				<div className='info-placeholder'></div>
 				<div className='info-content'>
@@ -79,7 +79,6 @@ const Home = () => {
 					<img src={Profile} alt='Profile Pic' />
 				</div>
 			</section>
-
 			<section id='features'>
 				<div className='flex-container'>
 					<div className='box bg-light'>
@@ -117,12 +116,8 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-
 			<div className='clr'></div>
-
-			<footer id='main-footer'>
-				<p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
-			</footer>
+			<Footer />
 		</section>
 	);
 };

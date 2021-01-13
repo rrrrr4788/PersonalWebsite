@@ -551,7 +551,7 @@ p {
 	float: left;
 	flex-flow: column;
 	display: flex;
-	opacity: 85%;
+	opacity: 0.85;
 }
 
 .project-box h3 {
@@ -591,6 +591,6 @@ p {
 
 /* Projects */
 .projects #projects-info {
-	background: url('../img/_MG_9881.CR2.jpg') no-repeat 50% 50%;
+	background: url('../img/duke.jpg') no-repeat 50% 50%;
 	background-size: cover;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 import profile from '../img/headshot2.png';
 import codeicon from '../img/codeicon.png';
 import java from '../img/Java.png';
@@ -196,9 +197,7 @@ const About = () => {
 				</div>
 			</section>
 			<div className='clr'></div>
-			<footer id='main-footer'>
-				<p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
-			</footer>
+			<Footer />
 		</section>
 	);
 };

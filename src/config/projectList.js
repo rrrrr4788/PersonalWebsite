@@ -16,6 +16,7 @@ import sql from '../img/sql.png';
 import code from '../img/codeicon.png';
 import kivy from '../img/kivy.png';
 import cpp from '../img/C++.png';
+import mvw from '../img/MvW_Menu.jpg';
 
 const projectList = [
 	{
@@ -102,7 +103,7 @@ const projectList = [
 		],
 	},
 	{
-		img: mc,
+		img: mvw,
 		alt: 'Marston vs West',
 		_name: 'Marston vs West',
 		intro:

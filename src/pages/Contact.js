@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import FB from '../img/FB.png';
 import GH from '../img/GH.png';
 import LI from '../img/LI.png';
+import Footer from '../components/Footer';
 import { connect } from 'react-redux';
 
 class Contact extends React.Component {
@@ -110,9 +111,7 @@ class Contact extends React.Component {
 					</div>
 				</section>
 
-				<footer id='main-footer'>
-					<p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
-				</footer>
+				<Footer />
 			</section>
 		);
 	}

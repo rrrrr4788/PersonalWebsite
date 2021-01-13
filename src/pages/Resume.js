@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Document, Page } from 'react-pdf';
+import Footer from '../components/Footer';
 
 import resume from '../resume/Resume-ISOM v2.pdf';
 
@@ -55,9 +56,7 @@ const Resume = () => {
 				</div>
 			</div>
 
-			<footer id='main-footer'>
-				<p>Haozhe Zhang &copy; 2020, All Rights Reserved</p>
-			</footer>
+			<Footer />
 		</section>
 	);
 };
