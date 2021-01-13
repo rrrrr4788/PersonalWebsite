@@ -116,10 +116,7 @@ const About = () => {
 						</p>
 					</div>
 					<div className='info-below'>
-						<p>
-							Currently, Haozhe is applying to a graduate school
-							in order to continue his study in Computer Science.
-						</p>
+						<p>Currently, Haozhe is looking for an internship.</p>
 					</div>
 				</div>
 			</section>
