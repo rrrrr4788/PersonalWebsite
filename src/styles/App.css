@@ -324,7 +324,7 @@ p {
 .contactbox {
 	float: left;
 	width: 100%;
-	padding: 50px;
+	padding: 10px;
 	text-align: center;
 }
 
@@ -496,6 +496,12 @@ p {
 	margin-bottom: 5%;
 }
 
+@media only screen and (max-width: 768px), (max-height: 512px) {
+	#resume .resume {
+		visibility: hidden;
+	}
+}
+
 /* Contact Form */
 #contact-form .form-group {
 	margin-bottom: 20px;
@@ -541,7 +547,7 @@ p {
 }
 
 /* Project Box*/
-.project-box {
+#project-box {
 	background-color: #ddd;
 	width: 30%;
 	height: 450px;
@@ -554,47 +560,47 @@ p {
 	opacity: 0.85;
 }
 
-.project-box h3 {
+#project-box h3 {
 	padding: 0;
 }
 
-.project-box p {
+#project-box p {
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-	.project-box p,
-	.project-box #tech,
-	.project-box .bottom {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.project-box {
-		width: 40%;
-		height: 200px;
-	}
-}
-
-.project-box #tech {
+#project-box .tech {
 	width: 40px;
 }
 
-.project-box #cover {
+#project-box .cover {
 	border-radius: 5px;
 	height: 130px;
 	margin-top: 10px;
 	object-fit: contain;
 }
 
-.project-box #bottom {
+#project-box .bottom {
 	flex: 1 1 auto;
 	position: relative;
 	justify-content: center;
 	align-items: center;
 	display: flex;
+}
+
+@media only screen and (max-width: 768px), (max-height: 512px) {
+	#project-box p,
+	#project-box .tech,
+	#project-box .bottom {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px), (max-height: 512px) {
+	#project-box {
+		width: 40%;
+		height: 200px;
+	}
 }
 
 /* Projects */

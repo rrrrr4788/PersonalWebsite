@@ -4,8 +4,8 @@ const ProjectBox = ({
 	project: { img, alt, _name, intro, link, techStack },
 }) => {
 	return (
-		<div className='project-box'>
-			<img src={img} alt={alt} id='cover' />
+		<div id='project-box'>
+			<img src={img} alt={alt} className='cover' />
 			<h4>{_name}</h4>
 			<p>{intro}</p>
 			<div className='techStack'>
@@ -13,7 +13,7 @@ const ProjectBox = ({
 					<img
 						src={tech[0]}
 						alt={tech[1]}
-						id='tech'
+						className='tech'
 						key={tech[1]}
 					></img>
 				))}
