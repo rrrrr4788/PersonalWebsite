@@ -18,7 +18,7 @@ const ProjectBox = ({
 					></img>
 				))}
 			</div>
-			<div id='bottom'>
+			<div className='bottom'>
 				<a className='btn btn-primary' href={link}>
 					View
 				</a>

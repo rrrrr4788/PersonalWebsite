@@ -565,8 +565,16 @@ p {
 
 @media only screen and (max-width: 768px) {
 	.project-box p,
-	.project-box #tech {
+	.project-box #tech,
+	.project-box .bottom {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.project-box {
+		width: 40%;
+		height: 200px;
 	}
 }
 
