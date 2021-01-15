@@ -44,9 +44,8 @@ const Home = () => {
 									Personal Space
 								</h1>
 								<p className='lead'>
-									An enthusiastic CISE & MSM student who is
-									currently enrolled at the University of
-									Florida.
+									An enthusiastic MSM student who is currently
+									enrolled at the University of Florida.
 								</p>
 								<Link className='btn' to='/about'>
 									About Me

@@ -281,7 +281,6 @@ p {
 	text-align: center;
 	padding: 90px 30px;
 	overflow: hidden;
-	align-items: stretch;
 	flex: 3;
 }
 
