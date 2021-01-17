@@ -606,4 +606,9 @@ p {
 .projects #projects-info {
 	background: url('../img/duke.jpg') no-repeat 50% 50%;
 	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	text-align: center;
+	word-wrap: normal;
 }

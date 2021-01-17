@@ -35,23 +35,13 @@ const Projects = () => {
 					</div>
 				</nav>
 			</header>
-			<div
-				style={{
-					alignItems: 'center',
-					justifyContent: 'center',
-					flex: 1,
-					textAlign: 'center',
-					wordWrap: 'normal',
-				}}
-			>
-				<section id='projects-info' className='bg-light py-3'>
-					<div className='container'>
-						{projectList.map((project) => (
-							<ProjectBox key={project._name} project={project} />
-						))}
-					</div>
-				</section>
-			</div>
+			<section id='projects-info' className='bg-light py-3'>
+				<div className='container'>
+					{projectList.map((project) => (
+						<ProjectBox key={project._name} project={project} />
+					))}
+				</div>
+			</section>
 			<Footer />
 		</section>
 	);
