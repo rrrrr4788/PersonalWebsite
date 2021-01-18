@@ -23,7 +23,7 @@ const sendEmail = (e) => {
 	);
 };
 
-export function emailReducer(state = initState, action) {
+export default function emailReducer(state = initState, action) {
 	switch (action.type) {
 		case 'CHANGE_STATE':
 			return {
