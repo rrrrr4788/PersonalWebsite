@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { connect, useDispatch } from 'react-redux';
+
+// basic imports
+
 import FB from '../img/FB.png';
 import GH from '../img/GH.png';
 import LI from '../img/LI.png';
 import Footer from '../components/Footer';
-import { connect } from 'react-redux';
 
-const Contact = (props) => {
+// components and image assets
+
+import emailjs from 'emailjs-com';
+import userId from '../config/id';
+// import { sendEmail } from '../actions/sendEmail';
+
+// email parameters. suspending moving the email sending module to actions.
+// FIXME: should find a way to make sure the redirection runs when the function is moved to actions.
+
+const Contact = ({ email, subject, message, sending, event, sendEmail }) => {
+	const dispatch = useDispatch();
+	useEffect(() => {
+		if (sending) {
+			sendEmail(event);
+		}
+	}, [sending]);
+
 	return (
 		<section className='contact'>
 			<header>
@@ -44,7 +64,18 @@ const Contact = (props) => {
 						<span className='text-primary'>Contact </span>Me
 					</h1>
 					<p>Please fill out the form below to contact me</p>
-					<form onSubmit={props.on_submit}>
+					<form
+						onSubmit={(e) => {
+							e.preventDefault();
+							// preventDefault is used to prevent the form from causing the entire page to re-render. it clears the default behaviors of the form element.
+							e.persist();
+							if (message && email && subject) {
+								dispatch({ type: 'SEND_EMAIL', payload: e });
+							} else {
+								alert('All fields are required.');
+							}
+						}}
+					>
 						<div className='form-group'>
 							<label htmlFor='email'>Email</label>
 							<input
@@ -52,7 +83,11 @@ const Contact = (props) => {
 								name='email'
 								id='email'
 								onChange={(e) => {
-									props.on_change(e);
+									e.persist();
+									dispatch({
+										type: 'CHANGE_STATE',
+										payload: e,
+									});
 								}}
 							/>
 						</div>
@@ -63,7 +98,11 @@ const Contact = (props) => {
 								name='subject'
 								id='subject'
 								onChange={(e) => {
-									props.on_change(e);
+									e.persist();
+									dispatch({
+										type: 'CHANGE_STATE',
+										payload: e,
+									});
 								}}
 							/>
 						</div>
@@ -74,12 +113,16 @@ const Contact = (props) => {
 								name='message'
 								id='message'
 								onChange={(e) => {
-									props.on_change(e);
+									e.persist();
+									dispatch({
+										type: 'CHANGE_STATE',
+										payload: e,
+									});
 								}}
 							></textarea>
 						</div>
 
-						<button type='submit' className='btn'>
+						<button type='submit' className='btn' id='submit-btn'>
 							Submit
 						</button>
 					</form>
@@ -112,15 +155,34 @@ const Contact = (props) => {
 	);
 };
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		on_change: (e) => {
-			dispatch({ type: 'CHANGE_STATE', payload: e });
-		},
-		on_submit: (e) => {
-			dispatch({ type: 'SEND_EMAIL', payload: e });
-		},
-	};
+const sendEmail = (e) => async (dispatch) => {
+	e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+	emailjs
+		.sendForm('gmail', 'personal_website', e.target, userId)
+		.then(() => {
+			// window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+			window.location.replace(
+				'https://rrrrr4788.github.io/PersonalWebsite/'
+			);
+			dispatch({ type: 'EMAIL_SENT' });
+		})
+		.catch((error) => {
+			dispatch({ type: 'EMAIL_FAILURE', payload: error.text });
+			console.log(error);
+			alert();
+		});
 };
 
-export default connect(null, mapDispatchToProps)(Contact);
+Contact.propTypes = {
+	sendEmail: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+	email: state.email.email,
+	subject: state.email.subject,
+	message: state.email.message,
+	sending: state.email.sending,
+	event: state.email.event,
+});
+
+export default connect(mapStateToProps, { sendEmail })(Contact);
