@@ -25,7 +25,7 @@ const Contact = ({ email, subject, message, sending, event, sendEmail }) => {
 		if (sending) {
 			sendEmail(event);
 		}
-	}, [sending]);
+	}, [sending, sendEmail, event]);
 
 	return (
 		<section className='contact'>
