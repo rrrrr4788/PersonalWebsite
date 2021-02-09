@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { connect, useDispatch } from 'react-redux';
 import Profile from '../img/profile_trimmed.png';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import EmailSuccess from '../components/EmailSuccess';
 
 // Basic imports
 
-const Home = () => {
+const Home = ({ send_success }) => {
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		if (send_success) {
+			setTimeout(() => {
+				dispatch({ type: 'SUCCESS_OVER' });
+			}, 3000);
+		}
+	});
+
 	return (
 		<section className='home'>
 			<header>
@@ -14,6 +26,8 @@ const Home = () => {
 				<div id='showcase'>
 					<div className='dark-overlay'>
 						<div className='container'>
+							{send_success ? <EmailSuccess /> : <div />}
+
 							<div className='showcase-content'>
 								<h1>
 									<span className='text-primary'>
@@ -99,4 +113,8 @@ const Home = () => {
 	);
 };
 
-export default Home;
+const mapStateToProps = (state) => ({
+	send_success: state.email.send_success,
+});
+
+export default connect(mapStateToProps, null)(Home);

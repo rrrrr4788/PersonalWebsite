@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Navbar from '../components/Navbar';
 import ProjectBox from '../components/ProjectBox';
 import Footer from '../components/Footer';
@@ -27,4 +28,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default connect(null, null)(Projects);

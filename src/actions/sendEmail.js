@@ -8,7 +8,8 @@ export const sendEmail = (e) => async (dispatch) => {
 		.then(() => {
 			// window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
 			window.location.replace(
-				'https://rrrrr4788.github.io/PersonalWebsite/'
+				// 'https://rrrrr4788.github.io/PersonalWebsite/'
+				'http://localhost:3000/PersonalWebsite#/'
 			);
 			dispatch({ type: 'EMAIL_SENT' });
 		})

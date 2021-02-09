@@ -1,5 +1,6 @@
 import React from 'react';
 import { Document, Page } from 'react-pdf';
+import { connect } from 'react-redux';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
@@ -40,4 +41,4 @@ const Resume = () => {
 	);
 };
 
-export default Resume;
+export default connect(null, null)(Resume);

@@ -6,6 +6,7 @@ const initState = {
 	event: {},
 	failure: false,
 	err: '',
+	send_success: false,
 };
 
 export default function email(state = initState, action) {
@@ -21,6 +22,12 @@ export default function email(state = initState, action) {
 			return {
 				...state,
 				sending: false,
+				send_success: true,
+			};
+		case 'SUCCESS_OVER':
+			return {
+				...state,
+				send_success: false,
 			};
 		case 'EMAIL_FAILURE':
 			return {
