@@ -16,13 +16,23 @@ import { sendEmail } from '../actions/sendEmail';
 
 // import the email sending function
 
-const Contact = ({ email, subject, message, sending, event, sendEmail }) => {
+const Contact = ({
+	email,
+	subject,
+	message,
+	sending,
+	event,
+	sendEmail,
+	send_success,
+}) => {
 	const dispatch = useDispatch();
 	useEffect(() => {
 		if (sending) {
 			sendEmail(event);
+		} else if (send_success) {
+			window.location = 'https://rrrrr4788.github.io/PersonalWebsite/#/';
 		}
-	}, [sending, sendEmail, event]);
+	}, [sending, sendEmail, event, send_success]);
 
 	return (
 		<section className='contact'>
@@ -138,6 +148,7 @@ const mapStateToProps = (state) => ({
 	message: state.email.message,
 	sending: state.email.sending,
 	event: state.email.event,
+	send_success: state.email.send_success,
 });
 
 export default connect(mapStateToProps, { sendEmail })(Contact);

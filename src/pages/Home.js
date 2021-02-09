@@ -17,8 +17,8 @@ const Home = ({ send_success }) => {
 				dispatch({ type: 'SUCCESS_OVER' });
 			}, 3000);
 		}
-	});
-
+	}, [send_success]);
+	console.log(send_success);
 	return (
 		<section className='home'>
 			<header>
@@ -27,7 +27,6 @@ const Home = ({ send_success }) => {
 					<div className='dark-overlay'>
 						<div className='container'>
 							{send_success ? <EmailSuccess /> : <div />}
-
 							<div className='showcase-content'>
 								<h1>
 									<span className='text-primary'>
@@ -36,8 +35,9 @@ const Home = ({ send_success }) => {
 									Personal Space
 								</h1>
 								<p className='lead'>
-									An enthusiastic MSM student who is currently
-									enrolled at the University of Florida.
+									An enthusiastic MSM and ex-CS student who is
+									currently enrolled at the University of
+									Florida.
 								</p>
 								<Link className='btn' to='/about'>
 									About Me
@@ -57,9 +57,10 @@ const Home = ({ send_success }) => {
 					<p>
 						Hello, welcome to my personal website. This is Haozhe
 						Zhang, a University of Florida student, currently
-						majoring in Computer Science Engineering at Herbert
-						Wertheim College of Engineering, and pursuing Master of
-						Science in Management at Warrington College of Business.
+						pursuing Master of Science in Management at Warrington
+						College of Business with a Bachelor's degree in Computer
+						Science Engineering at Herbert Wertheim College of
+						Engineering.
 					</p>
 					<Link to='/about' className='btn btn-light'>
 						Read More

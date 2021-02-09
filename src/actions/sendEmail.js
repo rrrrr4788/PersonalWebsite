@@ -6,10 +6,6 @@ export const sendEmail = (e) => async (dispatch) => {
 	emailjs
 		.sendForm('gmail', 'personal_website', e.target, userId)
 		.then(() => {
-			// window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-			window.location.replace(
-				'https://rrrrr4788.github.io/PersonalWebsite/'
-			);
 			dispatch({ type: 'EMAIL_SENT' });
 		})
 		.catch((error) => {
