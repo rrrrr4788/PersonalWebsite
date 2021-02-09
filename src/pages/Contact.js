@@ -12,12 +12,9 @@ import Navbar from '../components/Navbar';
 
 // components and image assets
 
-import emailjs from 'emailjs-com';
-import userId from '../config/id';
-// import { sendEmail } from '../actions/sendEmail';
+import { sendEmail } from '../actions/sendEmail';
 
-// email parameters. suspending moving the email sending module to actions.
-// FIXME: should find a way to make sure the redirection runs when the function is moved to actions.
+// import the email sending function
 
 const Contact = ({ email, subject, message, sending, event, sendEmail }) => {
 	const dispatch = useDispatch();
@@ -42,7 +39,8 @@ const Contact = ({ email, subject, message, sending, event, sendEmail }) => {
 					<form
 						onSubmit={(e) => {
 							e.preventDefault();
-							// preventDefault is used to prevent the form from causing the entire page to re-render. it clears the default behaviors of the form element.
+							// preventDefault is used to prevent the form from causing the entire page to re-render.
+							// it clears the default behaviors of the form element.
 							e.persist();
 							if (message && email && subject) {
 								dispatch({ type: 'SEND_EMAIL', payload: e });
@@ -128,24 +126,6 @@ const Contact = ({ email, subject, message, sending, event, sendEmail }) => {
 			<Footer />
 		</section>
 	);
-};
-
-const sendEmail = (e) => async (dispatch) => {
-	e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
-	emailjs
-		.sendForm('gmail', 'personal_website', e.target, userId)
-		.then(() => {
-			// window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-			window.location.replace(
-				'https://rrrrr4788.github.io/PersonalWebsite/'
-			);
-			dispatch({ type: 'EMAIL_SENT' });
-		})
-		.catch((error) => {
-			dispatch({ type: 'EMAIL_FAILURE', payload: error.text });
-			console.log(error);
-			alert();
-		});
 };
 
 Contact.propTypes = {
