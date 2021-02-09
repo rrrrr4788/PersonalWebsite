@@ -11,6 +11,5 @@ export const sendEmail = (e) => async (dispatch) => {
 		.catch((error) => {
 			dispatch({ type: 'EMAIL_FAILURE', payload: error.text });
 			console.log(error);
-			alert();
 		});
 };

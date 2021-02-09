@@ -18,7 +18,6 @@ const Home = ({ send_success }) => {
 			}, 3000);
 		}
 	}, [send_success]);
-	console.log(send_success);
 	return (
 		<section className='home'>
 			<header>
@@ -60,7 +59,7 @@ const Home = ({ send_success }) => {
 						pursuing Master of Science in Management at Warrington
 						College of Business with a Bachelor's degree in Computer
 						Science Engineering at Herbert Wertheim College of
-						Engineering.
+						Engineering and planning to graduate in August, 2021.
 					</p>
 					<Link to='/about' className='btn btn-light'>
 						Read More
