@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { connect, useDispatch } from 'react-redux';
 
 // basic imports
@@ -9,6 +8,7 @@ import FB from '../img/FB.png';
 import GH from '../img/GH.png';
 import LI from '../img/LI.png';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 // components and image assets
 
@@ -30,32 +30,7 @@ const Contact = ({ email, subject, message, sending, event, sendEmail }) => {
 	return (
 		<section className='contact'>
 			<header>
-				<nav id='navbar'>
-					<div className='container'>
-						<h1 className='logo'>
-							<Link to='/'>Haozhe Zhang</Link>
-						</h1>
-						<ul>
-							<li>
-								<Link to='/'>Home</Link>
-							</li>
-							<li>
-								<Link to='/about'>About</Link>
-							</li>
-							<li>
-								<Link to='/projects'>Projects</Link>
-							</li>
-							<li>
-								<Link to='/resume'>Resume</Link>
-							</li>
-							<li>
-								<Link className='current' to='/contact'>
-									Contact
-								</Link>
-							</li>
-						</ul>
-					</div>
-				</nav>
+				<Navbar target='Contact' />
 			</header>
 
 			<section id='contact-form' className='py-3'>

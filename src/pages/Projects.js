@@ -1,39 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 import ProjectBox from '../components/ProjectBox';
 import Footer from '../components/Footer';
+
+// Basic imports
+
 import projectList from '../config/projectList';
+
+// List of projects
 
 const Projects = () => {
 	return (
 		<section className='projects'>
 			<header>
-				<nav id='navbar'>
-					<div className='container'>
-						<h1 className='logo'>
-							<Link to='/'>Haozhe Zhang</Link>
-						</h1>
-						<ul>
-							<li>
-								<Link to='/'>Home</Link>
-							</li>
-							<li>
-								<Link to='/about'>About</Link>
-							</li>
-							<li>
-								<Link className='current' to='/projects'>
-									Projects
-								</Link>
-							</li>
-							<li>
-								<Link to='/resume'>Resume</Link>
-							</li>
-							<li>
-								<Link to='contact'>Contact</Link>
-							</li>
-						</ul>
-					</div>
-				</nav>
+				<Navbar target='Projects' />
 			</header>
 			<section id='projects-info' className='bg-light py-3'>
 				<div className='container'>

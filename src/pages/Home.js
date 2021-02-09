@@ -2,37 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Profile from '../img/profile_trimmed.png';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+
+// Basic imports
 
 const Home = () => {
 	return (
 		<section className='home'>
 			<header>
-				<nav id='navbar'>
-					<div className='container'>
-						<h1 className='logo'>
-							<Link to='/'>Haozhe Zhang</Link>
-						</h1>
-						<ul>
-							<li>
-								<Link className='current' to='/'>
-									Home
-								</Link>
-							</li>
-							<li>
-								<Link to='/about'>About</Link>
-							</li>
-							<li>
-								<Link to='/projects'>Projects</Link>
-							</li>
-							<li>
-								<Link to='/resume'>Resume</Link>
-							</li>
-							<li>
-								<Link to='/contact'>Contact</Link>
-							</li>
-						</ul>
-					</div>
-				</nav>
+				<Navbar target='Home' />
 				<div id='showcase'>
 					<div className='dark-overlay'>
 						<div className='container'>

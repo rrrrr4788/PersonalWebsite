@@ -1,6 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+// Basic imports
+
 import profile from '../img/headshot2.png';
 import codeicon from '../img/codeicon.png';
 import java from '../img/Java.png';
@@ -22,36 +25,13 @@ import sql from '../img/sql.png';
 import android from '../img/android.png';
 import kivy from '../img/kivy.png';
 
+// Image assets
+
 const About = () => {
 	return (
 		<section className='about'>
 			<header>
-				<nav id='navbar'>
-					<div className='container'>
-						<h1 className='logo'>
-							<Link to='/'>Haozhe Zhang</Link>
-						</h1>
-						<ul>
-							<li>
-								<Link to='/'>Home</Link>
-							</li>
-							<li>
-								<Link className='current' to='/about'>
-									About
-								</Link>
-							</li>
-							<li>
-								<Link to='/projects'>Projects</Link>
-							</li>
-							<li>
-								<Link to='/resume'>Resume</Link>
-							</li>
-							<li>
-								<Link to='contact'>Contact</Link>
-							</li>
-						</ul>
-					</div>
-				</nav>
+				<Navbar target='About' />
 			</header>
 
 			<section id='about-info' className='bg-light py-3'>
