@@ -12,23 +12,17 @@ import store from './store';
 const App = () => {
 	return (
 		<Provider store={store}>
-			<div className='App'>
-				<Router basename={process.env.PUBLIC_URL}>
-					<Fragment>
-						<Switch>
-							<Route exact path='/' component={Home} />
-							<Route
-								exact
-								path='/projects'
-								component={Projects}
-							/>
-							<Route exact path='/contact' component={Contact} />
-							<Route exact path='/resume' component={Resume} />
-							<Route exact path='/about' component={About} />
-						</Switch>
-					</Fragment>
-				</Router>
-			</div>
+			<Router basename={process.env.PUBLIC_URL}>
+				<Fragment>
+					<Switch>
+						<Route exact path='/' component={Home} />
+						<Route exact path='/projects' component={Projects} />
+						<Route exact path='/contact' component={Contact} />
+						<Route exact path='/resume' component={Resume} />
+						<Route exact path='/about' component={About} />
+					</Switch>
+				</Fragment>
+			</Router>
 		</Provider>
 	);
 };

@@ -27,12 +27,15 @@ const Contact = ({
 	send_success,
 }) => {
 	const dispatch = useDispatch();
+
+	// keep track of the sending state. once sending is flagged, send an email with the event saved in the store
 	useEffect(() => {
 		if (sending) {
 			sendEmail(event);
 		}
 	}, [sending, sendEmail, event]);
 
+	// once the email is sent, redirect to the home page
 	if (send_success) {
 		return <Redirect to='/' />;
 	}

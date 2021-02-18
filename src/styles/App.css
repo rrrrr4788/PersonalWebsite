@@ -239,7 +239,7 @@ p {
 	display: flex;
 	align-items: stretch;
 	position: relative;
-	height: 50vh;
+	min-height: 50vh;
 }
 
 #home-info .info-img {

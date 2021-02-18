@@ -11,6 +11,7 @@ import EmailSuccess from '../components/EmailSuccess';
 const Home = ({ send_success }) => {
 	const dispatch = useDispatch();
 
+	// after 3 seconds, hide the banner
 	useEffect(() => {
 		if (send_success) {
 			setTimeout(() => {
