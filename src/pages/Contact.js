@@ -13,6 +13,7 @@ import Navbar from '../components/Navbar';
 // components and image assets
 
 import { sendEmail } from '../actions/sendEmail';
+import { Redirect } from 'react-router-dom';
 
 // import the email sending function
 
@@ -29,10 +30,12 @@ const Contact = ({
 	useEffect(() => {
 		if (sending) {
 			sendEmail(event);
-		} else if (send_success) {
-			window.location = 'https://haozhe-zhang.herokuapp.com/';
 		}
-	}, [sending, sendEmail, event, send_success]);
+	}, [sending, sendEmail, event]);
+
+	if (send_success) {
+		return <Redirect to='/' />;
+	}
 
 	return (
 		<section className='contact'>
