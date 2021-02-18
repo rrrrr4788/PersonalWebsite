@@ -35,7 +35,7 @@ const About = () => {
 				<Navbar target='About' />
 			</header>
 
-			<section id='about-info' className='bg-light py-3'>
+			<section id='about-info' className='py-3'>
 				<div className='container'>
 					<div className='info-left'>
 						<h1 className='l-heading'>
@@ -53,13 +53,12 @@ const About = () => {
 							) was born in Huizhou, Guangdong, China, in 1998. In
 							2016, he matriculated at the University of Florida
 							in Chemical Engineering. One year later, he switched
-							to Computer Information and Science Engineering at
-							the Herbert Wertheim College of Engineering. Over
-							three years, Haozhe has grown up to be a skillful
-							programmer, with interests and experience in various
-							fields of Computer Science, including website
-							development, backend development, mobile
-							development, and Virtual Reality development.
+							to Computer Science at the Herbert Wertheim College
+							of Engineering. Over three years, Haozhe has grown
+							up to be a skillful programmer, with interests and
+							experience in various fields of Computer Science,
+							including website development, backend development,
+							mobile development, and Virtual Reality development.
 						</p>
 					</div>
 					<div className='info-right'>

@@ -17,7 +17,7 @@ const Home = ({ send_success }) => {
 				dispatch({ type: 'SUCCESS_OVER' });
 			}, 3000);
 		}
-	}, [send_success]);
+	}, [send_success, dispatch]);
 	return (
 		<section className='home'>
 			<header>
