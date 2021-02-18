@@ -30,7 +30,7 @@ const Contact = ({
 		if (sending) {
 			sendEmail(event);
 		} else if (send_success) {
-			window.location = 'https://rrrrr4788.github.io/PersonalWebsite/#/';
+			window.location = 'https://haozhe-zhang.herokuapp.com/';
 		}
 	}, [sending, sendEmail, event, send_success]);
 

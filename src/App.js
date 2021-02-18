@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -15,7 +15,7 @@ function App() {
 			<div className='App'>
 				<Router basename={process.env.PUBLIC_URL}>
 					<Fragment>
-						<HashRouter>
+						<Switch>
 							<Route exact path='/' component={Home} />
 							<Route
 								exact
@@ -25,7 +25,7 @@ function App() {
 							<Route exact path='/contact' component={Contact} />
 							<Route exact path='/resume' component={Resume} />
 							<Route exact path='/about' component={About} />
-						</HashRouter>
+						</Switch>
 					</Fragment>
 				</Router>
 			</div>
