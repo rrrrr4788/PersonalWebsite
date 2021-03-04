@@ -8,7 +8,8 @@ const ProjectBox = ({
 			<img src={img} alt={alt} className='cover' />
 			<h4>{_name}</h4>
 			<p>{intro}</p>
-			<div className='techStack'>
+
+			<div>
 				{techStack.map((tech) => (
 					<img
 						src={tech[0]}

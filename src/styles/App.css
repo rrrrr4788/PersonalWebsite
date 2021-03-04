@@ -126,6 +126,7 @@ p {
 	background: #333;
 	color: #fff;
 	width: 100%;
+	position: relative;
 }
 
 #navbar a {
@@ -178,9 +179,100 @@ p {
 	#navbar ul li a {
 		padding: 5px;
 		border-bottom: #444 dotted 1px;
+		display: none;
 	}
 
 	#navbar .menu-list {
+		padding-top: 70px;
+	}
+}
+
+#navbar .toggler {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+	transform: translateX(-5%);
+	right: 5%;
+	max-height: 100%;
+	opacity: 0;
+	width: 60px;
+	height: 60px;
+	margin-top: 5px;
+}
+
+#navbar .hamburger {
+	position: absolute;
+	right: 5%;
+	z-index: 1;
+	width: 60px;
+	height: 60px;
+	padding: 1rem;
+
+	margin-top: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(-5%);
+}
+
+/* Hamburger Line */
+#navbar .hamburger > div {
+	position: relative;
+	flex: none;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+	z-index: 2;
+}
+
+/* Hamburger Lines Top & Bottom */
+#navbar .hamburger > div:before,
+#navbar .hamburger > div:after {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	top: -10px;
+	width: 100%;
+	height: 2px;
+	background: white;
+}
+
+/* Moves Line Down */
+#navbar .hamburger > div:after {
+	top: 10px;
+}
+
+/* Toggler Animation */
+#navbar .toggler:checked + .hamburger > div {
+	transform: rotate(135deg);
+}
+
+/* Turns Lines into X */
+#navbar .toggler:checked + .hamburger > div:before,
+#navbar .toggler:checked + .hamburger > div:after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+#navbar .toggler:checked:hover + .hamburger > div {
+	transform: rotate(225deg);
+}
+
+/* Show Menu */
+#navbar .toggler:checked ~ .menu-list > ul li a {
+	display: block;
+	transition: display 0.4s ease 0.4s;
+}
+
+@media only screen and (min-width: 769px) {
+	#navbar .hamburger,
+	#navbar .toggler {
 		display: none;
 	}
 }
@@ -615,18 +707,19 @@ p {
 	display: flex;
 }
 
-@media only screen and (max-width: 768px), (max-height: 512px) {
+@media only screen and (max-width: 1024px), (max-height: 512px) {
+	#project-box {
+		width: 40%;
+		height: 200px;
+	}
 	#project-box p,
 	#project-box .tech,
 	#project-box .bottom {
 		display: none;
 	}
-}
 
-@media only screen and (max-width: 768px), (max-height: 512px) {
-	#project-box {
-		width: 40%;
-		height: 200px;
+	#project-box:hover {
+		background-color: #f7c08a;
 	}
 }
 
@@ -634,9 +727,15 @@ p {
 .projects #projects-info {
 	background: url('../img/duke.jpg') no-repeat 50% 50%;
 	background-size: cover;
+	text-align: center;
+	word-wrap: normal;
+}
+
+.projects #projects-info .container {
 	align-items: center;
-	justify-content: center;
-	flex: 1;
+	justify-content: space-evenly;
+	display: flex;
+	flex-flow: row wrap;
 	text-align: center;
 	word-wrap: normal;
 }
