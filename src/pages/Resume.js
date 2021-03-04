@@ -1,5 +1,6 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf';
+// import { Document, Page } from 'react-pdf';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { connect } from 'react-redux';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -20,6 +21,10 @@ const Resume = () => {
 			<div style={{ backgroundColor: '#ccc' }}>
 				<div className='container'>
 					<div id='resume'>
+						<p className='warning'>
+							Sorry, resume display is not supported on mobile
+							devices or under small view width.
+						</p>
 						<Document
 							file={resume}
 							onLoadError={console.error}
