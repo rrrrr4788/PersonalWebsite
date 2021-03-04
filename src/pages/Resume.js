@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 
 // Basic imports
 
-import resume from '../resume/Resume-ISOM v2.pdf';
+import resume from '../resume/Resume-MSM.pdf';
 
 // Resume asset
 
