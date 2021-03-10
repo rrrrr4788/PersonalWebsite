@@ -8,8 +8,8 @@ const Navbar = ({ target }) => {
 				<h1 className='logo'>
 					<Link to='/'>Haozhe Zhang</Link>
 				</h1>
-				<input type='checkbox' class='toggler' />
-				<div class='hamburger'>
+				<input type='checkbox' className='toggler' />
+				<div className='hamburger'>
 					<div></div>
 				</div>
 				<div className='menu-list'>
